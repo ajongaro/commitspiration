@@ -1,6 +1,8 @@
-# README
+# Summary
 
 TL;DR: Automatic commit messages sourced as inspiring quotes to keep you coding.
+
+<img width="614" alt="image" src="https://github.com/user-attachments/assets/b04fca33-b481-45a6-a846-bdc9fa38777d">
 
 ## What Is This
 
@@ -12,8 +14,8 @@ I was writing inspiring quotes as commit messages on a recent feature and I thou
 ### Installation Instructions
 
 1. Clone repo
-2. npm install
-3. npm link
+2. `npm install`
+3. `npm link`
 
 ### Usage
 
