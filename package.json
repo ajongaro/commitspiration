@@ -4,7 +4,7 @@
   },
   "name": "commitspiration",
   "version": "1.0.0",
-  "description": "a CLI to generate and commit inspiring quotes from great leaders.",
+  "description": "a CLI to generate inspiring quotes from great leaders for your commit messages.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
