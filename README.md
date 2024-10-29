@@ -1,5 +1,7 @@
 # README
 
+TL;DR: Automatic commit messages sourced as inspiring quotes to keep you coding.
+
 ## What Is This
 
 Every now and then, we need some inspiration to keep pushing through a challenging coding problem.
