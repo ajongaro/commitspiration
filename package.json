@@ -1,8 +1,8 @@
 {
   "bin": {
-    "inspire-commit": "./index.js"
+    "comminspo": "./index.js"
   },
-  "name": "inspire-commit",
+  "name": "comminspo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
