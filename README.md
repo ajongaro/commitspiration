@@ -2,6 +2,8 @@
 
 TL;DR: Automatic commit messages sourced as inspiring quotes to keep you coding.
 
+<img width="614" alt="image" src="https://github.com/user-attachments/assets/b04fca33-b481-45a6-a846-bdc9fa38777d">
+
 ## What Is This
 
 Every now and then, we need some inspiration to keep pushing through a challenging coding problem.
