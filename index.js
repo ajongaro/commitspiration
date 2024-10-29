@@ -46,6 +46,6 @@ program
 program
   .command("quote")
   .description("Just get a quote without commit")
-  .action(commitWithQuote);
+  .action(displayQuote);
 // Parse arguments
 program.parse(process.argv);
