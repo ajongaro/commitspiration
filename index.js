@@ -19,7 +19,6 @@ async function getRandomQuote() {
   }
 }
 
-// Function to commit with an inspirational quote
 async function commitWithQuote() {
   const quote = await getRandomQuote();
   try {
@@ -30,11 +29,23 @@ async function commitWithQuote() {
   }
 }
 
-// Set up the CLI command
+async function displayQuote() {
+  const quote = await getRandomQuote();
+  try {
+    console.log(`\n"${quote}"`);
+  } catch (error) {
+    console.error("❌ Failed to commit:", error.message);
+  }
+}
+
 program
   .command("go")
   .description("Create a git commit with an inspiring quote")
   .action(commitWithQuote);
 
+program
+  .command("quote")
+  .description("Just get a quote without commit")
+  .action(commitWithQuote);
 // Parse arguments
 program.parse(process.argv);
