@@ -16,7 +16,10 @@ I was writing inspiring quotes as commit messages on a recent feature and I thou
 ### Usage
 
 1. Stage your changes
-2. `cminspo go`
-3. Enjoy.
+2. `cminspo commit` to commit with an inspiring quote
+3. `cminspo quote` to just get a quote logged to terminal with no commit
+4. Enjoy.
+
+If you just want a random inspiration quote without committing, try `cminspo quote`
 
 Inspirational quotes provided by <a href="https://zenquotes.io/" target="_blank">ZenQuotes API</a>

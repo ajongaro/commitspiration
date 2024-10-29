@@ -12,7 +12,7 @@ async function getRandomQuote() {
   try {
     const response = await axios.get("https://zenquotes.io/api/random");
     const quote = response.data[0];
-    return `${quote.q} - ${quote.a}`;
+    return `${quote.q}`;
   } catch (error) {
     console.error("Couldn't fetch a quote. Using a local one instead.");
     return quotes[Math.floor(Math.random() * quotes.length)];
@@ -34,12 +34,12 @@ async function displayQuote() {
   try {
     console.log(`\n"${quote}"`);
   } catch (error) {
-    console.error("❌ Failed to commit:", error.message);
+    console.error("Something went wrong...", error.message);
   }
 }
 
 program
-  .command("go")
+  .command("commit")
   .description("Create a git commit with an inspiring quote")
   .action(commitWithQuote);
 
