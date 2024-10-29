@@ -1,4 +1,4 @@
-# README
+# Summary
 
 TL;DR: Automatic commit messages sourced as inspiring quotes to keep you coding.
 
