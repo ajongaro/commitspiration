@@ -20,8 +20,8 @@ async function getRandomQuote() {
 }
 
 // Function to commit with an inspirational quote
-function commitWithQuote() {
-  const quote = getRandomQuote();
+async function commitWithQuote() {
+  const quote = await getRandomQuote();
   try {
     execSync(`git commit -m "${quote}"`, { stdio: "inherit" });
     console.log(`\n✅ Commit message: "${quote}"`);
