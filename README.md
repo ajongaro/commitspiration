@@ -24,6 +24,4 @@ I was writing inspiring quotes as commit messages on a recent feature and I thou
 3. `cminspo quote` to just get a quote returned to terminal, with attribution
 4. Enjoy.
 
-If you just want a random inspiration quote without committing, try `cminspo quote`
-
 Inspirational quotes provided by <a href="https://zenquotes.io/" target="_blank">ZenQuotes API</a>
