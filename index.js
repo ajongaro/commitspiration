@@ -3,13 +3,20 @@
 const { execSync } = require("child_process");
 const quotes = require("./quotes");
 const { Command } = require("commander");
+const axios = require("axios");
 
 const program = new Command();
 
 // Function to get a random quote
-function getRandomQuote() {
-  const randomIndex = Math.floor(Math.random() * quotes.length);
-  return quotes[randomIndex];
+async function getRandomQuote() {
+  try {
+    const response = await axios.get("https://zenquotes.io/api/random");
+    const quote = response.data[0];
+    return `${quote.q} - ${quote.a}`;
+  } catch (error) {
+    console.error("Couldn't fetch a quote. Using a local one instead.");
+    return quotes[Math.floor(Math.random() * quotes.length)];
+  }
 }
 
 // Function to commit with an inspirational quote
