@@ -32,7 +32,7 @@ async function commitWithQuote() {
 
 // Set up the CLI command
 program
-  .command("commit")
+  .command("go")
   .description("Create a git commit with an inspiring quote")
   .action(commitWithQuote);
 
